@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Troca de Cor</title>
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+    }
+  </style>
+  <script>
+    function changeColor() {
+      var colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"]; // Lista de cores
+      var randomColor = colors[Math.floor(Math.random() * colors.length)]; // Escolhe uma cor aleatória da lista
+      document.body.style.backgroundColor = randomColor; // Define a cor do corpo
+    }
+
+    setInterval(changeColor, 1000); // Troca de cor a cada segundo
+  </script>
+</head>
+
+<body>
+  <h1>Testando o ECS</h1>
+  <p>ESTUDO PIPELINE E ECS</p>
+</body>
+
+</html>
